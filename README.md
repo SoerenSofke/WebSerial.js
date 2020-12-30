@@ -2,7 +2,7 @@
 JavaScript ❤️ Embedded Devices
 
 ## Example
-### Prerequisits
+### Prerequisite
 
 1. Upload the code below to your favorite Arduino board
 

@@ -30,12 +30,12 @@ void loop() {
 ```
 
 2. Connect this Arduino board to your PC
-3. Enable the experimental web platform features of your web browser in use
+3. Enable the experimental web platform features of your web browser in use, e.g.
    * `chrome://flags/#enable-experimental-web-platform-features`
    * `opera://flags/#enable-experimental-web-platform-features`
    * `edge://flags/#enable-experimental-web-platform-features`
 
 ### Example Page
-1. Open the example page: [https://soerensofke.github.io/WebSerial.js/](https://soerensofke.github.io/WebSerial.js/)
+1. Open the example page: [index.html](https://soerensofke.github.io/WebSerial.js/) of this repository
 2. Connect to your Arduino board by selecting the corresponding COM port
 3. Toggle the build-in LED of your Arduino board

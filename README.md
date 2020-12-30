@@ -2,4 +2,40 @@
 JavaScript ❤️ Embedded Devices
 
 ## Example
-Toogle LED – https://soerensofke.github.io/WebSerial.js/
+### Prerequisits
+
+1. Upload the code below to your favorite Arduino board
+
+```C
+void setup() {
+  Serial.begin(115200);
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  int cmd = Serial.parseInt();
+
+  switch (cmd) {
+    case -1:
+      digitalWrite(LED_BUILTIN, LOW);
+      break;
+      
+    case 1:
+      digitalWrite(LED_BUILTIN, HIGH);
+      break;
+      
+    default:
+      break;
+}
+```
+
+2. Connect this Arduino board to your PC
+3. Enable the experimental web platform features of your web browser in use
+   * `chrome://flags/#enable-experimental-web-platform-features`
+   * `opera://flags/#enable-experimental-web-platform-features`
+   * `edge://flags/#enable-experimental-web-platform-features`
+
+### Example Page
+1. Open the example page: [https://soerensofke.github.io/WebSerial.js/](https://soerensofke.github.io/WebSerial.js/)
+2. Connect to your Arduino board by selecting the corresponding COM port
+3. Toggle the build-in LED of your Arduino board

@@ -1,11 +1,16 @@
 const serial = new WebSerial()
-serial.init()
 
-const off = document.getElementById('ledOff');
+const connect = document.getElementById('connect');
 const on = document.getElementById('ledOn');
+const off = document.getElementById('ledOff');
 
-off.addEventListener('pointerdown', switchOff)
+connect.addEventListener('pointerdown', connectDevice)
 on.addEventListener('pointerdown', switchOn)
+off.addEventListener('pointerdown', switchOff)
+
+function connectDevice() {
+  serial.init()
+}
 
 function switchOff() {
   serial.write('-1')

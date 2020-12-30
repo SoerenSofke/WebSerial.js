@@ -39,3 +39,4 @@ void loop() {
 1. Open the example page: [index.html](https://soerensofke.github.io/WebSerial.js/) of this repository
 2. Connect to your Arduino board by selecting the corresponding COM port
 3. Toggle the build-in LED of your Arduino board
+4. Quit the serial connection by closing the corresponding web browser tab
